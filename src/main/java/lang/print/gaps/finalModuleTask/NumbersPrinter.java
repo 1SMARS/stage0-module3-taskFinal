@@ -2,8 +2,12 @@ package lang.print.gaps.finalModuleTask;
 
 public class NumbersPrinter {
     public void printIsPositive(int number) {
-        int a = 5;
-            System.out.println((number>0)?"true":"false");
-
+        while (number > 0) {
+            System.out.println("true");
+            break;
+        }
+        while (number <= 0) {
+            System.out.println("false");
+            break;
     }
 }
