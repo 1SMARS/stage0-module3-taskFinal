@@ -47,7 +47,7 @@ class NumbersPrinterTest extends BaseIOTest {
         List<String> strings = Files.readAllLines(path);
         List<String> declarationResult = strings.stream()
                 .filter(line ->
-                        line.contains("if") || line.contains("?"))
+                        line.contains("if"))
                 .collect(Collectors.toList());
 
         assertEquals(0, declarationResult.size());
